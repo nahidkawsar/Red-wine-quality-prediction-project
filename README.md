@@ -29,7 +29,8 @@ Before you begin, ensure you have the following installed:
 1. Download the red wine quality dataset from Kaggle: [Red Wine Quality Dataset](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009).
 2. Extract the dataset to your project directory.
 
-
+### You mast arrange the files in this formate.Under the static folder keep all the images and under the templates folder keep the html file
+![arrange](https://github.com/user-attachments/assets/47731753-a34d-44dc-ba34-4e06a52f6b35)
 
 # Model Training
 1. Open a Jupyter notebook or a Python script.
