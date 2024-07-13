@@ -1,0 +1,163 @@
+<html>
+<head>
+
+<title>Red wine quality</title>
+<style>
+
+
+
+
+body {
+    background-image: url("{{ url_for('static', filename='red-wine.jpg') }}");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+form {
+
+text-align:center
+}
+
+input{
+width: 50%
+}
+
+input[type=submit] {
+  background-color: green;
+  color: white;
+  width: 10%
+}
+
+select {
+width: 50%;
+}
+label {
+  font-size: 20px;
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}​
+
+
+</style>
+</head>
+
+<body>
+
+<center><h1>Red wine quality prediction: {{ results}}</h1></center>
+
+<form action="{{ url_for('predict')}}" method="post">
+
+
+<label for = "fnam">Name</label>
+<input type = 'text' id = 'fnam', name = 'fn', placeholder = "Enter Passenger's Name..." />
+
+<br></br>
+
+<label for = "fixed_acidity">fixed_acidity</label>
+<input type = 'text' id = 'fixed_acidity', name = 'fixed_acidity', placeholder = 'Enter fixed_acidity...' />
+
+<br></br>
+
+
+
+
+
+<label for = "volatile_acidity</label>
+<input type = 'text' id = 'volatile_acidity', name = 'volatile_acidity', placeholder = 'Enter volatile_acidity...' />
+
+<br></br>
+
+
+
+
+<label for = "citric_acid">citric_acid</label>
+<input type = 'text' id = 'citric_acid', name = 'citric_acid', placeholder = 'Enter citric_acid...' />
+
+<br></br>
+
+
+
+
+
+
+<label for = "residual_sugar">residual_sugar</label>
+<input type = 'text' id = 'residual_sugar', name = 'residual_sugar', placeholder = 'Enter residual_sugar...' />
+
+<br></br>
+
+
+<label for = "volatile_acidity">volatile_acidity</label>
+<input type = 'text' id = 'volatile_acidity', name = 'volatile_acidity', placeholder = 'Enter volatile_acidity...' />
+
+<br></br>
+
+<label for = "chlorides">chlorides</label>
+<input type = 'text' id = 'chlorides', name = 'chlorides', placeholder = 'Enter chlorides...' />
+
+<br></br>
+
+
+
+
+<label for = "free_sulfur_dioxide">free_sulfur_dioxide</label>
+<input type = 'text' id = 'free_sulfur_dioxide', name = 'free_sulfur_dioxide', placeholder = 'Enter free_sulfur_dioxide...' />
+
+<br></br>
+
+
+
+<label for = "total_sulfur_dioxide">total_sulfur_dioxide</label>
+<input type = 'text' id = 'total_sulfur_dioxide', name = 'total_sulfur_dioxide', placeholder = 'Enter total_sulfur_dioxide...' />
+
+<br></br>
+
+<label for = "density">density</label>
+<input type = 'text' id = 'density', name = 'density', placeholder = 'Enter density...' />
+
+<br></br>
+
+
+
+<label for = "pH">pH</label>
+<input type = 'text' id = 'pH', name = 'pH', placeholder = 'Enter pH...' />
+
+<br></br>
+
+
+
+<label for = "sulphates">sulphates</label>
+<input type = 'text' id = 'sulphates', name = 'sulphates', placeholder = 'Enter sulphates...' />
+
+<br></br>
+
+
+<label for = "alcohol">alcohol</label>
+<input type = 'text' id = 'alcohol', name = 'alcohol', placeholder = 'Enter alcohol...' />
+
+<br></br>
+
+
+
+
+
+
+
+
+
+<label></label>
+<input id="submit" type="submit" value="Predict" ></input>
+
+</form>
+
+</body>
+
+
+
+
+
+
+</html>
