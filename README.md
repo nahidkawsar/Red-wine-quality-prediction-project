@@ -187,4 +187,4 @@ python app.py
 
 
 ### Author: H.M. Nahid kawsar
-Find me in [LinkedIn:](#linkedin.com/in/h-m-nahid-kawsar-232a86266)
+Find me in [LinkedIn:](#https://www.linkedin.com/in/hmnahidkawsar)
